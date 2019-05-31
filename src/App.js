@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header> MELHOR QUE O TWITTER </header>
+      <div class="main">
+          <div class="box">
+              <div class="box-name"> LOGIN </div>
+              <form class="formulario">
+                  <input class="form-item form-input" type="email" placeholder="Email"/><br/>
+                  <input class="form-item form-input" type="password" placeholder="Senha"/><br/>
+                  <input class="form-item form-button" type="submit" value="Entrar"/>
+              </form>
+              <a class="esqueci-senha" href="#"> ESQUECI A SENHA</a>
+          </div>
+          <div class="box">
+              <div class="box-name"> CADASTRO </div>
+              <form class="formulario">
+                  <input class="form-item form-input" type="text" placeholder="Nome"/><br/>
+                  <input class="form-item form-input" type="email" placeholder="Email"/><br/>
+                  <input class="form-item form-input" type="password" placeholder="Senha"/><br/>
+                  <input class="form-item form-input" type="password" placeholder="Repetir Senha"/><br/>
+                  <input class="form-item form-button" type="submit" value="Cadastrar"/>
+              </form>
+          </div>
+      </div>
     </div>
   );
 }
